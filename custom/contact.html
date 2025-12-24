@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Website</title>
+    <link
+      href="styles.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <!-- Contact info -->
+      <div class="contact-info" aria-hidden="true">
+        <address>
+          <a>Sheri Hiestand</a>
+          <br />
+          <a href="tel:+17657499875" aria-label="Call us at +1 765 749 9875"></a>
+            Phone: +1 (765) 749 9875</a>
+            <br />
+          <a href="email:shiestand@BHHSIN.com" aria-label="Email us at email:shiestand@BHHSIN.com"></a>
+            Email:shiestand@BHHSIN.com</a>
+            <br />
+          <a>License Number: RB18001169</a>
+        </address>
+      </div>
+
+      <!-- Navigation menu -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="ADTV.html">ADTV</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="buyers.html">Buyers</a></li>
+          <li><a href="sellers.html">Sellers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Dark mode toggle button
+      <button
+        id="darkModeToggle"
+        aria-pressed="false"
+        aria-label="Toggle dark mode"
+      >
+        ⏾
+      </button> -->
+    </header>
+
+    <main class="contact-main">
+      <section style="padding: 20px">
+        <h1>Contact me</h1>
+        <p>
+          <form action="https://api.web3forms.com/submit" method="POST">
+
+              <!-- Replace with your Access Key -->
+              <input type="hidden" name="access_key" value="37ebf207-e9ff-4a56-a34d-cb3e2c1efdeb" />
+              <!-- Form Inputs. Each input must have a name="" attribute -->
+               <p><label id="name">Name:</label></p>
+              <input type="text" name="name" required>
+              <p><label id="email">Email:</label></p>
+              <input type="email" name="email" required>
+              <p><label id="message">Message:</label></p>
+              <textarea name="message" required></textarea>
+
+              <!-- Honeypot Spam Protection -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+              <!-- Custom Confirmation / Success Page -->
+              <!-- <input type="hidden" name="redirect" value="https://index.html"> -->
+
+              <button type="submit">Submit Form</button>
+
+          </form>
+        </p>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <p>&copy; Sheri Hiestand. All rights reserved.</p>
+  </footer>
+</html>
