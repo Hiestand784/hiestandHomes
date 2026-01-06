@@ -3,8 +3,9 @@ body {
   margin: 0;
   padding: 0;
   background-image: url("/media/pictures/Downloaded_Pics/pexels-hiroom-17240698.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   color: #000000;
   line-height: 1.6;
@@ -12,6 +13,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.4;
 }
 
 header {
