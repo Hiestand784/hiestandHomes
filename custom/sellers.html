@@ -4,51 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Estate Website</title>
-    <link
-      href="styles.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header" role="banner">
-      <!-- Contact info -->
-      <div class="contact-info" aria-hidden="true">
-        <address>
-          <a>Sheri Hiestand</a>
-          <br />
-          <a href="tel:+17657499875" aria-label="Call us at +1 765 749 9875"></a>
-            Phone: +1 (765) 749 9875</a>
-            <br />
-          <a href="email:shiestand@BHHSIN.com" aria-label="Email us at email:shiestand@BHHSIN.com"></a>
-            Email:shiestand@BHHSIN.com</a>
-            <br />
-          <a>License Number: RB18001169</a>
-        </address>
-      </div>
-
-      <!-- Navigation menu -->
-      <nav aria-label="Main Navigation">
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="ADTV.html">ADTV</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="buyers.html">Buyers</a></li>
-          <li><a href="sellers.html">Sellers</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="contact-info" aria-hidden="true">
+            <address>
+              <a>Sheri Hiestand</a>
+              <br />
+              <a href="tel:7657499875" aria-label="Call us at 765 749 9875"></a>
+                Phone: (765) 749-9875</a>
+                <br />
+              <a href="email:shiestand@BHHSIN.com" aria-label="Email us at email: shiestand@BHHSIN.com"></a>
+                Email: shiestand@bhhsin.com</a>
+                <br />
+              <a>License Number: RB18001169</a>
+            </address>
+          </div>
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="ADTV.html">ADTV</a></li>
+            <li><a href="buyers.html">Buyers</a></li>
+            <li><a href="sellers.html">Sellers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
     </header>
-
+    <h1 class="landing-title">Sellers</h1>
+    
     <main>
-      <section style="padding: 20px">
-        <h1>Sellers</h1>
-        <p>
-            Sellers blurb
-        </p>
-      </section>
+      <p class="sellers_preamble">Many people are not aware of how much goes into selling a house. Preperation alone can seem daunting, but taking things one step at a time will streamline the process. Learn more about selling a house below:</p>
+        <h2>Steps to Successfully Sell Your House:</h2>
+          <section class="sellers_info">
+            <button class="accordion">Prepare Your House for Sale</button>
+            <div class="panel">
+              <p>First impressions matter. Having your house clean, orderly, and presentable will draw more potential buyers during showings</p>
+              <ul>
+                <li>Consider small repairs that will be cost effective</li>
+                <li>Enhance curb appeal with landscaping, a few flowers can go a long way</li>
+                <li>Remove as many personal belongings as possible so the next buyer can envision themselves in the home</li>
+              </ul>
+            </div>
+            <button class="accordion">Set the Right Price with an Agent</button>
+            <div class="panel">
+              <p>Setting the right price is critical for getting attention and keeping your house from stalling on the market</p>
+              <ul>
+                <li>Understand the current market situation by rese</li>
+                <li>Consult a real estate professional for a true market analysis, click <a href="/contact.html">here</a> to get in touch with me easily!</li>
+                <li>Be realistic about your home's value, setting a price too high can cause a house to stall seem undesirable, while setting it too low leaves money on the table</li>
+                <li>Work with your agent to get the house listed and maintain the house in a "ready to show" state</li>
+              </ul>
+            </div>
+            <button class="accordion">Showing the House and Negotiation</button>
+            <div class="panel">
+              <p>Having your house ready for a showing at any time will increase your chances of finding a buyer. While it doesn't need to be in perfect shape 24/7, having it ready to show on short notice is ideal</p>
+              <ul>
+                <li>Keep your house ready to show on short notice, and keep a line of contact open to schedule showings</li>
+                <li>Prepare for showings and open houses by double checking that the place is as inviting as possible to the next buyer</li>
+                <li>Anticipate negotiating price across multiple or few offers, keeping in mind that this is not necessarily the set final price</li>
+                <li>Know that after you and a buyer agree to a price, there are a few more steps remaining</li>
+              </ul>
+            </div>
+            <button class="accordion">Closing on the Sale</button>
+            <div class="panel">
+              <p>After accepting an offer there are a few final steps to be taken to complete the deal</p>
+              <ul>
+                <li>Double check with your agent that you are fulfilling your contractual agreements that may include inspection, repairs, or other contingencies</li>
+                <li>Work with your agent to ensure all paperwork is in order and signed</li>
+                <li>Be prepared for the buyer to do a final walk through of the house to ensure the house is in proper condition</li>
+                <li>Sign the closing papers and paying closing costs</li>
+              </ul>
+            </div>
+          </section>
     </main>
   </body>
   <footer>
-    <p>&copy; Sheri Hiestand. All rights reserved.</p>
+    <p>&copy; 2025 Sheri Hiestand. All rights reserved.</p>
   </footer>
 </html>

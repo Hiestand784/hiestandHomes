@@ -4,160 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Estate Website</title>
-    <link
-      href="styles.css"
-      rel="stylesheet"
-    />
-
-    <style>
-      Reset and base styles
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Manrope", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #ffffff;
-        color: #000000;
-        line-height: 1.6;
-        transition: background-color 0.3s, color 0.3s;
-      }
-
-      /* Dark mode styles */
-      /* body.dark-mode {
-        background-color: #121212;
-        color: #e0e0e0;
-      } */
-
-      /* Header styles */
-
-
-      /* body.dark-mode .header {
-        background-color: #1e1e1e;
-      } */
-
-      /* Contact info */
-      .contact-info {
-        top: 10px;
-        left: 20px;
-        font-size: 0.8em;
-        font-weight: 500;
-        color:#000000
-      }
-
-      body.dark-mode .contact-info {
-        color: #cccccc;
-      }
-
-      /* Navigation styles */
-      nav {
-        margin: 0 auto;
-      }
-
-      nav ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-        margin: 0;
-        padding: 0;
-      }
-
-      nav a {
-        font-size: larger;
-        text-decoration: none;
-        font-weight: 600;
-        color: inherit;
-        padding: 8px 12px;
-        border-radius: 4px;
-        transition: background-color 0.2s;
-      }
-
-      nav a:hover,
-      nav a:focus {
-        background-color: #670038;
-        color: #ffffff;
-        outline: none;
-      }
-
-      /* Accent color */
-      h1,
-      h2,
-      h3 {
-        color: #670038;
-      }
-
-      /* Dark mode toggle button styles */
-      /* #darkModeToggle {
-        background-color: transparent;
-        border: 2px solid #670038;
-        border-radius: 4px;
-        padding: 6px 12px;
-        cursor: pointer;
-        font-family: "Manrope", sans-serif;
-        font-size: 2em;
-        transition: background-color 0.2s, color 0.2s;
-      }
-
-      #darkModeToggle:hover,
-      #darkModeToggle:focus {
-        background-color: #670038;
-        color: #ffffff;
-        outline: none;
-      } */
-
-      /* Screen adjustments */
-      @media (max-width: 768px) {
-        nav ul {
-          flex-direction: column;
-          align-items: center;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header" role="banner">
-      <!-- Contact info -->
-      <div class="contact-info" aria-hidden="true">
-        <address>
-          <a>Sheri Hiestand</a>
-          <br />
-          <a href="tel:+17657499875" aria-label="Call us at +1 765 749 9875"></a>
-            Phone: +1 (765) 749 9875</a>
-            <br />
-          <a href="email:shiestand@BHHSIN.com" aria-label="Email us at email:shiestand@BHHSIN.com"></a>
-            Email:shiestand@BHHSIN.com</a>
-            <br />
-          <a>License Number: RB18001169</a>
-        </address>
-      </div>
-
-      <!-- Navigation menu -->
-      <nav aria-label="Main Navigation">
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="ADTV.html">ADTV</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="buyers.html">Buyers</a></li>
-          <li><a href="sellers.html">Sellers</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="contact-info" aria-hidden="true">
+            <address>
+              <a>Sheri Hiestand</a>
+              <br />
+              <a href="tel:7657499875" aria-label="Call us at 765 749 9875"></a>
+                Phone: (765) 749-9875</a>
+                <br />
+              <a href="email:shiestand@BHHSIN.com" aria-label="Email us at email: shiestand@BHHSIN.com"></a>
+                Email: shiestand@bhhsin.com</a>
+                <br />
+              <a>License Number: RB18001169</a>
+            </address>
+          </div>
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="ADTV.html">ADTV</a></li>
+            <li><a href="buyers.html">Buyers</a></li>
+            <li><a href="sellers.html">Sellers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
     </header>
-
+    <h1 class="landing-title">Buyers</h1>
     <main>
-      <section style="padding: 20px">
-        <h1>Buyers</h1>
-        <p>
-            Buyers blurb
-        </p>
-      </section>
+      <p class="buyers_preamble">We know buying a home can feel overwhelming! By learning more about the steps of the process can help you be better prepared. Below you can learn more about any part of the house buying process: </p>
+        <h2>What to consider when buying a home:</h2>
+          <section class="buyers_info">
+            <button class="accordion">Understand why you are buying a home</button>
+            <div class="panel">
+              <p>With a clear image of why you are buying a house, any future questions will be easier to answer and reduce the stress of the unknown</p>
+              <ul>
+                <li>Know your goal, is this a home or an investment?</li>
+                <li>Decide on essentials like location, size, and price range</li>
+                <li>Make a list of your "must haves" your "wants" and the things you can go without</li>
+              </ul>
+            </div>
+            <button class="accordion">Figure out your finances</button>
+            <div class="panel">
+              <p>While not as fun as looking at houses, making sure your finances are in order is a necessary step in finding the right house</p>
+              <ul>
+                <li>Plan for a down payment</li>
+                <li>Understand how credit score can affect a loan</li>
+                <li>Research the right mortgage for your situation</li>
+                <li>Gather documents like pay stubs, tax return documents, and bank statements</li>
+                <li>Get preapproved for a mortgage with a lender of your choice</li>
+              </ul>
+            </div>            
+            <button class="accordion">Finding the perfect place and the right agent</button>
+            <div class="panel">
+              <p>An exciting step to look for the right house, which starts by choosing the right real estate agent!
+                <br>Let me answer your questions and help you make the right choice. Click <a href="/contact.html">here</a> to get in touch with me <br> To get started you'll want to do the following:
+              </p>
+              <ul>
+                <li>Browse the market for houses that fit your needs</li>
+                <li>Ask your real estate agent questions as they come up</li>
+                <li>Make a list of the best options, then schedule a tour</li>
+                <li>Submit an offer on the house</li>
+                <li>Negotiate a final price</li>
+              </ul>
+            </div>
+            <button class="accordion">Closing out the deal</button>
+            <div class="panel">
+              <p>
+                After you and the seller agree on a price, there are a few final steps to complete the purchase
+              </p>
+              <ul>
+                <li>Getting your house inspected is necessary to ensure that you won't run into unforeseen issues in the future</li>
+                <li>Having the house appraised is also important to ensure the lender and you as a buyer are getting a fair price</li>
+                <li>Once the inspection and appraisal are complete, negotiate any costs and credits with the seller</li>
+                <li>Finally the settlment process can begin, which includes final document signings, paying closing costs, and receiving ownership officially</li>
+              </ul>
+            </div>
+          </section>
     </main>
   </body>
   <footer>
-    <p>&copy; Sheri Hiestand. All rights reserved.</p>
+    <p>&copy; 2025 Sheri Hiestand. All rights reserved.</p>
   </footer>
 </html>
