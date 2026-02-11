@@ -115,10 +115,18 @@ section {
 }
 
 footer {
+  background: black;
+  color: white;
+  font-size: 1.5rem;
   margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer img {
+  height: 100px;
+  margin: 16px;
 }
 
 /*home page elements */
@@ -140,7 +148,7 @@ footer {
 }
 
 .home_image {
-  width: 50%;
+  width: 60%;
   height: auto;
   min-width: 450px;
 }
@@ -153,7 +161,7 @@ footer {
   padding: 16px;
   min-width: 250px;
   max-width: 600px;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .home_contact_button {
@@ -218,8 +226,8 @@ footer {
 .adtv_image {
   width: 50%;
   height: auto;
-  min-width: 450px;
-  margin-right: 16px;
+  min-width: 500px;
+  margin: 16px;
 }
 
 .adtv_text {
@@ -227,10 +235,21 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
+  text-indent: 32px;
+  margin: 0;
+  min-width: 300px;
+  font-size: 1.5rem;
+}
+
+.adtv_text > i {
   text-align: center;
-  margin: 16px;
-  min-width: 300pxpx;
-  font-size: 1.4rem;
+  align-self: flex-start;
+}
+
+#adtv_call_to_action {
+  align-self: flex-start;
+  text-indent: none;
 }
 
 .adtv_button {
@@ -241,6 +260,7 @@ footer {
   border-radius: 8px;
   cursor: pointer;
   font-size: 1.5rem;
+  margin-top: 24px;
 }
 
 .adtv_video_title {
@@ -320,7 +340,7 @@ footer {
 
 .accordion:after {
   content: "\02795";
-  font-size: 13px;
+  font-size: 1rem;
   color: #ffffff;
   float: right;
   margin-left: 5px;
@@ -352,11 +372,49 @@ footer {
 /* buyers page elements */
 
 .buyers_preamble {
-  font-size: 1.4rem;
-  text-align: center;
-  margin: 0% 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.buyers_preamble_image {
+  width: 40%;
+  min-width: 600px;
+  max-width: 800px;
+  max-height: 450px;
+  height: auto;
+  margin-left: 48px;
+}
+
+.buyers_preamble_text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 16px;
+}
+
+.buyers_preamble_text {
+  font-size: 1.5rem;
+  text-align: left;
+  text-indent: 32px;
+  margin: 0  ;
+  width: 100%;
   max-width: 1100px;
   color: #222;
+}
+
+.buyers_contact_button {
+  padding: 12px 24px;
+  background-color: #670038;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 16px 0;
 }
 
 .buyers_info {
@@ -365,14 +423,61 @@ footer {
   align-items: center;
 }
 
+.panel > p {
+  margin: 8px 0;
+}
+
 /* sellers page elements */
+
+.sellers_preamble_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sellers_image {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 0 0 48px;
+}
+
+.sellers_preamble_text_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px;
+}
 
 .sellers_preamble {
   font-size: 1.4rem;
-  text-align: center;
-  margin: 0% 10%;
-  max-width: 1100px;
+  width: 100%;
+  text-align: left;
+  text-indent: 32px;
   color: #222;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#button_lead{
+  text-align: center;
+}
+
+.sellers_preamble p {
+  margin: 0;
+}
+
+.sellers_contact_button {
+  padding: 12px 24px;
+  background-color: #670038;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 16px 0;
 }
 
 .sellers_info {
@@ -386,7 +491,6 @@ footer {
 .about {
   display: flex;
   flex-direction: column;
-  padding: 16px;
   max-height: 50%;
 }
 
@@ -395,7 +499,6 @@ footer {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
-  padding: 16px;
 }
 
 .about_image {
@@ -450,7 +553,6 @@ footer {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  padding: 16px;
   padding-right: 0px;
   justify-content: center;
   align-items: center;
@@ -459,6 +561,10 @@ footer {
 .contact-main h1 {
   font-size: 2.5rem;
   color: #670038;
+}
+
+.contact > p {
+  font-size: 32px;
 }
 
 .contact-main form {
