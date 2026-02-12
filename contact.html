@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+     <header class="header" role="banner">
+        <div class="contact-info" aria-hidden="true">
+            <address>
+              <a>Sheri Hiestand</a>
+              <br />
+              <a href="tel:7657499875" aria-label="Call us at 765 749 9875"></a>
+                <a>Phone: (765) 749-9875</a>
+                <br />
+              <a href="email:shiestand@BHHSIN.com" aria-label="Email us at email: shiestand@BHHSIN.com"></a>
+                <a>Email: shiestand@bhhsin.com</a>
+                <br />
+              <a>License Number: RB18001169</a>
+            </address>
+          </div>
+      <!-- Navigation menu -->
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="ADTV.html">ADTV</a></li>
+            <li><a href="buyers.html">Buyers</a></li>
+            <li><a href="sellers.html">Sellers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+      <section>
+        <h1>Get in Touch</h1>
+          <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="37ebf207-e9ff-4a56-a34d-cb3e2c1efdeb" />
+                <p><label id="name">Name:</label></p>
+              <input type="text" name="name" placeholder="Jane Doe" aria-placeholder="enter your name" required>
+              <p><label id="email">Email:</label></p>
+              <input type="email" name="email" aria-placeholder="enter your email" placeholder="janedoe@email.com" required>
+              <p><label id="message">Message:</label></p>
+              <textarea name="message" required placeholder="Let me know what I can do for you!"></textarea>
+              <!-- Honeypot Spam Protection -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+              <button type="submit">Submit</button>
+          </form>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <img src="/media/pictures/logos/equal housing opportunity.png" alt="Equal Housing Opportunity"/>
+    <p>&copy; 2026 Sheri Hiestand. All rights reserved.</p>
+    <img src="/media/pictures/logos/realtor R.png" alt="Official Realtor Logo" style="width: 90px; height: auto;">
+  </footer>
+</html>

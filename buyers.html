@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header" role="banner">
+        <div class="contact-info" aria-hidden="true">
+            <address>
+              <a>Sheri Hiestand</a>
+              <br />
+              <a href="tel:7657499875" aria-label="Call us at 765 749 9875"></a>
+                <a>Phone: (765) 749-9875</a>
+                <br />
+              <a href="email:shiestand@BHHSIN.com" aria-label="Email us at email: shiestand@BHHSIN.com"></a>
+                <a>Email: shiestand@bhhsin.com</a>
+                <br />
+              <a>License Number: RB18001169</a>
+            </address>
+          </div>
+        <nav aria-label="Main Navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="ADTV.html">ADTV</a></li>
+            <li><a href="buyers.html">Buyers</a></li>
+            <li><a href="sellers.html">Sellers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    <h1 class="landing-title">Buyers</h1>
+    <main>
+      <section class="buyers_preamble">
+        <img src="/media/pictures/sheri_portraits/mat and door.jpeg" class="buyers_preamble_image" alt="Alt text here"/>
+        <div class="buyers_preamble_text_container">
+          <p class="buyers_preamble_text">The home buying process can feel overwhelming. My job is to guide you through each step of finding and purchasing your dream home.</p>
+          <p class="buyers_preamble_text">Whether you are a first time buyer, looking to expand, or hoping to downsize, I am here to make the buying process as smooth as possible for you. Getting in contact with me lets me fully use my resources and experience to accomodate your unique situation. I am here to answer any of your questions. 
+          <p class="buyers_preamble_text" id="button_lead"><i>Click below to start working with me:</i></p>
+          <button class="buyers_contact_button" onclick="location.href='contact.html'">I want to buy a home!</button>
+          <p class="buyers_preamble_text"> Below is an overview to get you started on finding your next home:</p>
+          </div>
+      </section>
+      <h2>What to consider when buying a home:</h2>
+        <section class="buyers_info">
+          <button class="accordion">Choosing Your Mortgage</button>
+          <div class="panel">
+            <p>Getting your mortgage figured out is the first step to home ownership. I can connect you with a lender to get you moving towards your next home! Click <a href="/contact.html" style="display: inline;">here</a> and I will help you find the mortgage program that is right for you.</p>
+            <p>Here are some things to keep in mind as you determine your mortgage:</p>
+            <ul>
+              <li>Getting preapproved for a mortgage is the first step</li>
+              <li>Gather documents like pay stubs, tax returns, and bank statements</li>
+              <li>Plan for a down payment (often 5%-20% of property value)</li>
+              <li>Budget for a monthly loan payment after the purchase</li>
+              <li>Know that credit score can affect loan rates</li>
+              <li>Receive your preapproval letter in preperation for submitting offers</li>
+            </ul>
+          </div>            
+          <button class="accordion">Understanding What Style of Home You Want</button>
+          <div class="panel">
+            <p>Knowing the key features to your dream home will streamline the searching process. My personal tip is to make a list of your must-haves, some nice-to-haves, and any deal breakers.</p>
+            <p>Here are some things to consider when choosing your home's style:</p>
+            <ul>
+              <li>Understand how important location is, living close to work or school is important for many of my clients</li>
+              <li>Decide how many bedrooms and bathrooms you need</li>
+              <li>Think about layout, extra floors, or a basement can be a plus or something you want to avoid</li>
+              <li>Consider the non-living spaces too, yard size and outbuildings are a deciding factor for many buyers</li>
+              <li>Staying open and flexible may help you find a better deal financially</li>
+            </ul>
+          </div>
+          <button class="accordion">Working With Your Agent</button>
+          <div class="panel">
+            <p>At this point things get exciting! With financing in place and a clear idea of what you want, I will use my expertise to match you with the perfect home.
+              <br>I want to get you into your dream home! Click <a href="/contact.html">here</a> so we can get started together! <br> At this point I will work with you to:
+            </p>
+            <ul>
+              <li>Make sense of current market trends and home prices</li>
+              <li>Share listings that fit your unique list of needs</li>
+              <li>Schedule tours of homes that are a good fit for you</li>
+              <li>Submit an offer on your behalf once the right home is found</li>
+            </ul>
+          </div>
+          <button class="accordion">Closing the Deal</button>
+          <div class="panel">
+            <p>
+              After a price is agreed upon, there are a few final steps to complete the purchase. The closing process is not well known by many buyers, but that is where I step in. I will keep the last stretch of the process simple and stress-free as possible.<br> These final steps include:
+            </p>
+            <ul>
+              <li>Getting your new home inspected to ensure the condition is good</li>
+              <li>Having the home appraised seperately by the lender</li>
+              <li>Making sure all final agreements and paperwork properly reflect the sale</li>
+              <li>Paying for closing costs</li>
+              <li>Receving your keys an getting official ownership</li>
+            </ul>
+            <p>Congratulations! You made it, and are now the official owner of your new home!</p>
+          </div>
+          <hr class="hr_template">
+          <p class="buyers_preamble_text">I hope my overview can serve as a helpful guide to you. I love to work with people and make finding their dream home as easy as possible! Click below and let's get started:</p>
+          <button class="buyers_contact_button" onclick="location.href='contact.html'">I want to buy a home!</button>
+        </section>
+    </main>
+  </body>
+  <footer>
+    <img src="/media/pictures/logos/equal housing opportunity.png" alt="Equal Housing Opportunity"/>
+    <p>&copy; 2026 Sheri Hiestand. All rights reserved.</p>
+    <img src="/media/pictures/logos/realtor R.png" alt="Official Realtor Logo" style="width: 90px; height: auto;">
+  </footer>
+</html>
