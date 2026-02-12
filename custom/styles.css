@@ -598,6 +598,10 @@ footer img {
   font-size: 20px;
 }
 
+.contact > p {
+  font-size: 1.7rem;;
+}
+
 form > p {
   font-size: 1.7rem;
   margin: 16px 0;
