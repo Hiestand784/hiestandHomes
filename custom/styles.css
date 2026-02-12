@@ -117,7 +117,7 @@ section {
 footer {
   background: black;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-top: auto;
   display: flex;
   justify-content: center;
@@ -184,10 +184,10 @@ footer img {
   max-width: 950px;
 }
 
-.home_hr{
+.hr_template{
   border:#000000 1px solid;
-  margin-bottom: 32px;
-  width:80%; 
+  margin: 16px;
+  width:75%; 
   text-align:center;
 }
 
@@ -553,7 +553,7 @@ footer img {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  padding-right: 0px;
+  padding: 0px;
   justify-content: center;
   align-items: center;
 }
@@ -561,10 +561,6 @@ footer img {
 .contact-main h1 {
   font-size: 2.5rem;
   color: #670038;
-}
-
-.contact > p {
-  font-size: 32px;
 }
 
 .contact-main form {
@@ -576,7 +572,7 @@ footer img {
 .contact-main input,
 .contact-main textarea {
   padding: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #3d3d3d;
   border-radius: 4px;
   font-size: 20px;
   resize: none;
@@ -600,4 +596,9 @@ footer img {
   border-radius: 8px;
   cursor: pointer;
   font-size: 20px;
+}
+
+form > p {
+  font-size: 1.7rem;
+  margin: 16px 0;
 }
